@@ -4,49 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Tour and Travel Agency</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    <nav>
-        <header>
-            <div class="logo-icon"></div>
-        </header>
 
-        <section class="nav-container">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Our Package</a>
-            <a class="nav-item">Call Us</a>
-        </section>
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>My</span>Travel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
     </nav>
 
-    <main>
-        <article class="main-title">
-            <header>
-                <h1>Your Trusted Travel Agent's</h1>
-            </header>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
 
-            <p>Your happines is our happines.</p>
-        </article>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
 
-        <section class="main-content">
-            <article class="main-content-item">
-                <div class="main-content-banner"></div>
+</header>
 
-                <div class="main-item">
-                    <div class="item-icon"></div>
+<div class="login-form-container">
 
-                    <div>
-                        <h3>Lorem Ipsum Dolor</h3>
-                        <p>Lorem Ipsum Dolor</p>
-                    </div>
-                </div>
-            </article>
-            <form class="main-content-item">
-                <input type="text" />
-                <button type="button">Submit</button>
-            </form>
-        </section>
-    </main>
+    <i class="fas fa-time" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover new places with us, adventure awaits</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="assets\vid-1.mp4"></span>
+        <span class="vid-btn" data-src="assets\vid-2.mp4"></span>
+        <span class="vid-btn" data-src="assets\vid-3.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="assets\vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="assets\book-img.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+    
+
+
+
+
+
+
+
+
+
+<script src="js\script.js"></script>
 </body>
 </html>
